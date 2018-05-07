@@ -16,13 +16,13 @@ class ApplicationController < Sinatra::Base
 		{
 		success: false,
 		message: "Please consult the API documentations"
-		}.to_jason
+		}.to_json
   	end
   	get '*' do
   		{
   		success: false,
 		message: "404 page not found"
-		}.to_jason
+		}.to_json
   		#halt 404--- look it up
   		
   	end
